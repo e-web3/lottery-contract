@@ -1,0 +1,19 @@
+{
+  "name": "section2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^2.0.14",
+    "extra-fs": "^3.2.10",
+    "ganache-cli": "^6.12.2",
+    "mocha": "^10.0.0",
+    "solc": "^0.8.16",
+    "web3": "^1.7.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "compile": "yarn solcjs --bin --abi --include-path node_modules/ --base-path . -o . Lottery.sol",
+    "test": "mocha"
+  }
+}
